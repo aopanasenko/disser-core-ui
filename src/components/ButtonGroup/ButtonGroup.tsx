@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 export const ButtonGroupWrap = styled.div`
     width: 100%;
     display: flex;
+    margin-bottom: 70px;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 20px;
