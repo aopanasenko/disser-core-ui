@@ -1,11 +1,11 @@
-import * as React from 'react';
+import * as React from "react";
 import styled from "astroturf";
 import { ButtonGroup, Title } from "@@components";
 
-const MainPageWrap = styled.div`
+export const Page1Wrap = styled.div`
 `;
 
-const MainPageContent = styled.div`
+const Page1Content = styled.div`
     width: 60%;
     height: 200px;
     margin: 50px auto 0 auto;
@@ -14,9 +14,9 @@ const MainPageContent = styled.div`
     align-items: center;
 `;
 
-export type MainPageProps = {};
+export type Page1Props = {};
 
-export const MainPage: React.FC<MainPageProps> = ({}) => {
+export const Page1: React.FC<Page1Props> = ({}) => {
     const buttonDataMock = [
         {
             itemLink: '/',
@@ -37,12 +37,12 @@ export const MainPage: React.FC<MainPageProps> = ({}) => {
     ];
 
     return (
-        <MainPageWrap>
-            <MainPageContent>
-                <Title>Main page</Title>
+        <Page1Wrap>
+            <Page1Content>
+                <Title>Page 1</Title>
                 <ButtonGroup buttonItems={buttonDataMock}/>
-            </MainPageContent>
-        </MainPageWrap>
-    )
+            </Page1Content>
+        </Page1Wrap>
+    );
 }
 

@@ -70,7 +70,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Laser-pack",
+            title: "Disser-ui",
             template: "src/index.html",
             inject: false,
             minify: {
