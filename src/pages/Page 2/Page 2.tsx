@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "astroturf";
 import { ButtonGroup, Title } from "@@components";
-import { MainContent } from "@@pages";
+import { ContentWrapper, MainContent } from "@@components/styled";
 
 export const Page2Wrap = styled.div`
 `;
@@ -39,7 +39,7 @@ export const Page2: React.FC<Page2Props> = ({}) => {
 
     return (
         <Page2Wrap>
-            <Page2Content>
+            <ContentWrapper>
                 <Title>Page 2</Title>
                 <ButtonGroup buttonItems={buttonDataMock}/>
                 <MainContent>
@@ -55,7 +55,7 @@ export const Page2: React.FC<Page2Props> = ({}) => {
                     Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
                     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc
                 </MainContent>
-            </Page2Content>
+            </ContentWrapper>
         </Page2Wrap>
     );
 }

@@ -1,22 +1,9 @@
 import * as React from 'react';
 import styled from "astroturf";
 import { ButtonGroup, Title } from "@@components";
+import { ContentWrapper, MainContent } from "@@components/styled";
 
 const MainPageWrap = styled.div`
-`;
-
-const MainPageContent = styled.div`
-    width: 60%;
-    height: 200px;
-    margin: 50px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-export const MainContent = styled.div`
-    display: flex;
-    font-size: 15px;
 `;
 
 export type MainPageProps = {};
@@ -43,7 +30,7 @@ export const MainPage: React.FC<MainPageProps> = ({}) => {
 
     return (
         <MainPageWrap>
-            <MainPageContent>
+            <ContentWrapper>
                 <Title>Main page</Title>
                 <ButtonGroup buttonItems={buttonDataMock}/>
                 <MainContent>
@@ -59,7 +46,7 @@ export const MainPage: React.FC<MainPageProps> = ({}) => {
                     Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
                     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc
                 </MainContent>
-            </MainPageContent>
+            </ContentWrapper>
         </MainPageWrap>
     )
 }

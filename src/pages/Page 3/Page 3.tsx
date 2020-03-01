@@ -1,18 +1,9 @@
 import * as React from "react";
 import styled from "astroturf";
 import { ButtonGroup, Title } from "@@components";
-import { MainContent } from "@@pages";
+import { ContentWrapper, MainContent } from "@@components/styled";
 
 export const Page3Wrap = styled.div`
-`;
-
-const Page3Content = styled.div`
-    width: 60%;
-    height: 200px;
-    margin: 50px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 `;
 
 export type Page3Props = {};
@@ -39,7 +30,7 @@ export const Page3: React.FC<Page3Props> = ({}) => {
 
     return (
         <Page3Wrap>
-            <Page3Content>
+            <ContentWrapper>
                 <Title>Page 3</Title>
                 <ButtonGroup buttonItems={buttonDataMock}/>
                 <MainContent>
@@ -55,7 +46,7 @@ export const Page3: React.FC<Page3Props> = ({}) => {
                     Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
                     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc
                 </MainContent>
-            </Page3Content>
+            </ContentWrapper>
         </Page3Wrap>
     );
 }
