@@ -1,14 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
 import styled from "astroturf";
 import { ButtonGroup, Title } from "@@components";
 import { ContentWrapper, MainContent } from "@@components/styled";
 
-const MainPageWrap = styled.div`
+export const HistoryWrap = styled.div`
 `;
 
-export type MainPageProps = {};
+export type HistoryProps = {};
 
-export const MainPage: React.FC<MainPageProps> = ({}) => {
+export const History: React.FC<HistoryProps> = ({}) => {
     const buttonDataMock = [
         {
             itemLink: '/',
@@ -37,15 +37,14 @@ export const MainPage: React.FC<MainPageProps> = ({}) => {
     ];
 
     return (
-        <MainPageWrap>
+        <HistoryWrap>
             <ContentWrapper>
-                <Title>Учебно-исследовательский стед "Умный город"</Title>
+                <Title>History</Title>
                 <ButtonGroup buttonItems={buttonDataMock}/>
                 <MainContent>
-                    Учебно-исследовательский стед "Умный город"
+                        History
                 </MainContent>
             </ContentWrapper>
-        </MainPageWrap>
-    )
+        </HistoryWrap>
+    );
 }
-

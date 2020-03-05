@@ -1,16 +1,18 @@
 import * as React from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
-import { MainPage, Page1, Page2, Page3 } from "@@pages";
+import { MainPage, SmartHome, Agriculture, Industry, History, Transport } from "@@pages";
 
 export const App: React.FC = () => {
     return (
         <HashRouter>
             <Switch>
                 <Route exact path="/" component={MainPage} />
-                <Route path="/page1" component={Page1} />
-                <Route path="/page2" component={Page2} />
-                <Route path="/page3" component={Page3} />
+                <Route path="/smarthome" component={SmartHome} />
+                <Route path="/agriculture" component={Agriculture} />
+                <Route path="/industry" component={Industry} />
+                <Route path="/transport" component={Transport} />
+                <Route path="/history" component={History} />
             </Switch>
         </HashRouter>
     );
