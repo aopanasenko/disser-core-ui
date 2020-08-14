@@ -1,14 +1,23 @@
-import * as React from 'react';
+import * as React from "react";
 import styled from "astroturf";
 import { ButtonGroup, Title } from "@@components";
 import { ContentWrapper, MainContent } from "@@components/styled";
 
-const MainPageWrap = styled.div`
+export const AgricultureWrap = styled.div`
 `;
 
-export type MainPageProps = {};
+const AgricultureContent = styled.div`
+    width: 60%;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 
-export const MainPage: React.FC<MainPageProps> = ({}) => {
+export type AgricultureProps = {};
+
+export const Agriculture: React.FC<AgricultureProps> = ({}) => {
     const buttonDataMock = [
         {
             itemLink: '/',
@@ -37,15 +46,15 @@ export const MainPage: React.FC<MainPageProps> = ({}) => {
     ];
 
     return (
-        <MainPageWrap>
+        <AgricultureWrap>
             <ContentWrapper>
-                <Title>Учебно-исследовательский стед "Умный город"</Title>
+                <Title>Сельское хозяйство</Title>
                 <ButtonGroup buttonItems={buttonDataMock}/>
                 <MainContent>
-                    Учебно-исследовательский стед "Умный город"
+                    Сельское хозяйство
                 </MainContent>
             </ContentWrapper>
-        </MainPageWrap>
-    )
+        </AgricultureWrap>
+    );
 }
 

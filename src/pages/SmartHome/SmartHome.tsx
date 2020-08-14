@@ -1,14 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
 import styled from "astroturf";
 import { ButtonGroup, Title } from "@@components";
 import { ContentWrapper, MainContent } from "@@components/styled";
 
-const MainPageWrap = styled.div`
+export const SmartHomeWrap = styled.div`
 `;
 
-export type MainPageProps = {};
+export type SmartHomeProps = {};
 
-export const MainPage: React.FC<MainPageProps> = ({}) => {
+export const SmartHome: React.FC<SmartHomeProps> = ({}) => {
     const buttonDataMock = [
         {
             itemLink: '/',
@@ -37,15 +37,15 @@ export const MainPage: React.FC<MainPageProps> = ({}) => {
     ];
 
     return (
-        <MainPageWrap>
+        <SmartHomeWrap>
             <ContentWrapper>
-                <Title>Учебно-исследовательский стед "Умный город"</Title>
+                <Title>Умный дом</Title>
                 <ButtonGroup buttonItems={buttonDataMock}/>
                 <MainContent>
-                    Учебно-исследовательский стед "Умный город"
+                    Умный дом
                 </MainContent>
             </ContentWrapper>
-        </MainPageWrap>
-    )
+        </SmartHomeWrap>
+    );
 }
 
